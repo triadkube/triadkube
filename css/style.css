@@ -556,7 +556,7 @@ body{
 .ping .input-content {
 	position: relative;
 	width: 100%;
-	height: 60vh;
+	height: 60%;
 	overflow: hidden;
 }
 
