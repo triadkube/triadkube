@@ -3,9 +3,10 @@
 <head>
 	<title>Creative Web and Mobile App Developers :-: TraidKube</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/estimate .css">
+	<link rel="stylesheet" type="text/css" href="css/estimate.css">
 	<link rel="stylesheet" type="text/css" href="css/mobile.css">
 	<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
 
@@ -36,14 +37,38 @@
 	</div>
 
 	<div class="estimate">
-		<div class="input-wrapper">
-			<p>Name</p>
-			<input type="text" class="estimate-input" id="name">
+		<div class="hed">Get Estimate</div>
+		<div class="estimate-sector">
+			<input type="text" placeholder="Name" class="estimate-input" id="name">
+			<input type="email" placeholder="E-Mail" class="estimate-input" id="email">
+			<input type="number" placeholder="Mobile" class="estimate-input" id="mobile">
+			<input type="text" placeholder="Company" class="estimate-input" id="company">
 		</div>
 
-		<input type="email" class="estimate-input" id="email">
-		<input type="number" class="estimate-input" id="mobile">
-		<input type="text" class="estimate-input" id="company">
+		<div class="estimate-sector" >
+			<h3>Select Device</h3>
+			<div id="flex">
+				<div class="device">
+					<p style="font-size: 2em; margin-right: 10px;" id="est-desktop-tick">&#10004;</p><p id="est-desktop"><i class="fas fa-desktop fa-3x"></i><p style="font-size: 1.4em; margin-left: 10px;">Desktop</p></p>	
+				</div>
+
+				<div class="device">
+					<p style="font-size: 2em; margin-right: 10px;" id="est-mobile-tick">&#10004;</p><p id="est-mobile"><i class="fas fa-mobile fa-3x"></i><p style="font-size: 1.4em; margin-left: 10px;">Mobile</p></p>	
+				</div>
+			</div>
+
+			<h3>Select Scope</h3>
+
+			<div id="flex">
+				<div class="device">
+					<p style="font-size: 2em; margin-right: 10px;" id="est-front-tick">&#10004;</p><p id="est-front"><i class="far fa-window-maximize fa-3x"></i></i><p style="font-size: 1.4em; margin-left: 10px;">Front-End</p></p>	
+				</div>
+
+				<div class="device">
+					<p style="font-size: 2em; margin-right: 10px;" id="est-back-tick">&#10004;</p><p id="est-back"><i class="fas fa-server fa-3x"></i><p style="font-size: 1.4em; margin-left: 10px;">Mobile</p></p>	
+				</div>
+			</div>
+		</div>
 	</div>
 
 	
