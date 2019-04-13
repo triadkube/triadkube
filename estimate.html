@@ -46,29 +46,49 @@
 		</div>
 
 		<div class="estimate-sector" >
-			<h3>Select Device</h3>
+			<h2>Select Device</h2>
 			<div id="flex">
 				<div class="device">
-					<p style="font-size: 2em; margin-right: 10px;" id="est-desktop-tick">&#10004;</p><p id="est-desktop"><i class="fas fa-desktop fa-3x"></i><p style="font-size: 1.4em; margin-left: 10px;">Desktop</p></p>	
+					<p style="font-size: 2em; margin-right: 10px; opacity: 0; transition: all 0.4s ease" id="est-desktop-tick">&#10004;</p>
+					<div id="est-desktop" style="display: flex;">
+						<i class="fas fa-desktop fa-3x"></i>
+						<p style="font-size: 1.4em; margin-left: 10px;">Desktop</p>
+					</div>	
 				</div>
 
 				<div class="device">
-					<p style="font-size: 2em; margin-right: 10px;" id="est-mobile-tick">&#10004;</p><p id="est-mobile"><i class="fas fa-mobile fa-3x"></i><p style="font-size: 1.4em; margin-left: 10px;">Mobile</p></p>	
+					<p style="font-size: 2em; margin-right: 10px; opacity: 0; transition: all 0.4s ease;" id="est-mobile-tick">
+						&#10004;
+					</p>
+
+					<div id="est-mobile" style="display: flex;">
+						<i class="fas fa-mobile fa-3x"></i>
+						<p style="font-size: 1.4em; margin-left: 10px;">Mobile</p>
+					</div>	
 				</div>
 			</div>
 
-			<h3>Select Scope</h3>
+			<h2>Select Scope</h2>
 
 			<div id="flex">
 				<div class="device">
-					<p style="font-size: 2em; margin-right: 10px;" id="est-front-tick">&#10004;</p><p id="est-front"><i class="far fa-window-maximize fa-3x"></i></i><p style="font-size: 1.4em; margin-left: 10px;">Front-End</p></p>	
+					<p style="font-size: 2em; margin-right: 10px; opacity: 0; transition: all 0.4s ease" id="est-front-tick">&#10004;</p>
+					<div id="est-front" style="display: flex;">
+						<i class="far fa-window-maximize fa-3x"></i>
+						<p style="font-size: 1.4em; margin-left: 10px;">Front-End</p>
+					</div>	
 				</div>
 
 				<div class="device">
-					<p style="font-size: 2em; margin-right: 10px;" id="est-back-tick">&#10004;</p><p id="est-back"><i class="fas fa-server fa-3x"></i><p style="font-size: 1.4em; margin-left: 10px;">Mobile</p></p>	
+					<p style="font-size: 2em; margin-right: 10px; opacity: 0; transition: all 0.4s ease" id="est-back-tick">&#10004;</p>
+					<div id="est-back" style="display: flex;">
+						<i class="fas fa-server fa-3x"></i>
+						<p style="font-size: 1.4em; margin-left: 10px;">Mobile</p>
+					</div>	
 				</div>
 			</div>
 		</div>
+		<div class="submit"><p id="submit">Submit</p></div>
 	</div>
 
 	
@@ -79,6 +99,7 @@
 	<script type="text/javascript" src="app.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/index.js" ></script>
+	<script type="text/javascript" src="js/estimate.js" ></script>
 </body>
 </html>
 </html>
