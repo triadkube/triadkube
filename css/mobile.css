@@ -135,4 +135,12 @@
 	div.service-wrapper .service-card {
 		width: 70%;
 	}
+
+	div.estimate {
+		flex-wrap: wrap;
+	}
+
+	div.estimate .estimate-sector {
+		width: 80%;
+	}
 }
