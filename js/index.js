@@ -326,17 +326,17 @@ const counter = () => {
 
 	const inserter = () => {
 		let wcounter = 0, acounter = 0;
-			web.innerHTML = "₹ 0"
+			web.innerHTML = "Rs 0"
 
 			setInterval(() => {
-				web.innerHTML = `₹ ${wcounter}`
+				web.innerHTML = `Rs ${wcounter}`
 				wcounter = wcounter+50;
-				app.innerHTML = `₹ ${acounter}`;
+				app.innerHTML = `Rs ${acounter}`;
 				acounter = acounter+100;
 
 				if (wcounter > 6999 || acounter > 14000) {
-					web.innerHTML = "₹ 6999";
-					app.innerHTML = "₹ 13999";
+					web.innerHTML = "Rs 6999";
+					app.innerHTML = "Rs 13999";
 				}
 			}, 10);
 	}
