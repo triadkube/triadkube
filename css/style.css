@@ -654,6 +654,18 @@ body{
 	border: 1px solid #fff;
 }
 
+.footer .footer-content ul {
+	list-style: none;
+	z-index: 10;
+	position: absolute;
+}
+
+.footer .footer-content ul li {
+	margin-bottom: 20px;
+	color: #ccc;
+	cursor: pointer;
+}
+
 .footer .footer-content:before {
 	transform-origin: center;
 	transition: all 0.3s ease;
