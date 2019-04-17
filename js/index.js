@@ -209,9 +209,14 @@ const fsform = () => {
 					}) 
 				}).then(response => response.json()).then(sts => {
 					if (sts === 'SUCCESS') {
-						document.getElementsByClassName('form-success').style.height = "100vh";
-						document.getElementsByClassName('success').innerHTML = "We recieved your Request! We will contact you as soon as possible :)"
-	
+						document.getElementsByClassName('form-success')[0].style.height = "100vh";
+						document.getElementsByClassName('form-success')[0].style.zIndex = "100";
+						document.getElementsByClassName('success')[0].innerHTML = "We recieved your Request! We will contact you as soon as possible :)"
+						
+						document.getElementsByClassName('form-success')[0].addEventListener("click", () => {
+							document.getElementsByClassName('form-success')[0].style.height = "0vh";
+							document.getElementsByClassName('form-success')[0].style.zIndex = "-5";
+						})
 					}
 				})
 			})
