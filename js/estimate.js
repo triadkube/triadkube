@@ -62,6 +62,35 @@ const estimate = () => {
 		}
 	})
 
+	document.getElementById('submit').addEventListener("click", () => {
+		console.log(name.value, email.value, mobileField.value, company.value, bdesktop, bmobile, bfront, bback);
+		submit.style.backgroundColor = "#bbb";
+		submit.style.color = "#333";
+
+		fetch('https://ancient-depths-93632.herokuapp.com/estimate', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify({
+				name: name.value,
+				email: email.value,
+				phone:mobileField.value,
+				company: company.value,
+				desktop: bdesktop,
+				mobile: bmobile,
+				front: bfront,
+				back: bback
+			})
+		}).then(response => response.json()).then(sts => {
+			if (sts === 'SUCCESS') {
+				submit.style.backgroundColor = "green";
+				submit.style.color = "#fff";
+				submit.innerHTML = "Thank You for Your Interest! We will get back to You soon!"
+			}
+		})
+	})
+
 }
 
 estimate();

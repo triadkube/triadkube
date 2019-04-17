@@ -3,6 +3,28 @@ body{
 	padding: 0;
 }
 
+.form-success {
+	position: fixed;
+	width: 100vw;
+	height: 0vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 100;
+	transition: all 0.3s ease;
+}
+
+.form-success .success {
+	padding: 50px;
+	color: white;
+	font-size: 2em;
+	width: 50%;
+	text-align: center;
+	border: 2px solid #fff;
+}
+
+
 .mobilemenu {
 	display: none;
 }

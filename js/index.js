@@ -191,6 +191,29 @@ const fsform = () => {
 				}
 			actionButton.addEventListener("click", () => {
 				console.log('Goyya');
+				actionButton.style.opacity = "0";
+				fetch('https://ancient-depths-93632.herokuapp.com/consulting', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify({
+						name: resName.value,
+						email: resEmail.value,
+						phone:resMobile.value,
+						budget: resBudget.value,
+						web: rweb,
+						mobile: rmobile,
+						seo: rseo,
+						uiux: ruiux
+					}) 
+				}).then(response => response.json()).then(sts => {
+					if (sts === 'SUCCESS') {
+						document.getElementsByClassName('form-success').style.height = "100vh";
+						document.getElementsByClassName('success').innerHTML = "We recieved your Request! We will contact you as soon as possible :)"
+	
+					}
+				})
 			})
 		}
 	}

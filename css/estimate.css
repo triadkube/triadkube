@@ -89,4 +89,5 @@
 	text-align: center;
 	border-radius: 20px;
 	cursor: pointer;
+	transition: all 0.3s ease;
 }
