@@ -3,6 +3,10 @@
 		display: none;
 	}
 
+	#mob-width{
+		width: 30%
+	}
+
 	div.menu {
 		display: none;
 	}
