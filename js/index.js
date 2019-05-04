@@ -386,7 +386,7 @@ const bannerText = () => {
 
 	textArray = ["Welcome to TriadKube <br>where Expectation meets Reality",
 				 "Everyone can afford an Website <br>with TriadKube",
-				 "Projects with International Standard <br>for Indian Budget"
+				 "Matchless Quality and Matchless Performance<br>for Matchless Price"
 				];
 
 	var i=0;
